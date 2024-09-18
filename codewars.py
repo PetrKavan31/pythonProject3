@@ -6,6 +6,8 @@ def dig_pow(n, p):
 m = 92
 n = m
 p = 1
+print(n)
+print(m)
 sum_a = []
 while n != 0:
    y = n // 10
