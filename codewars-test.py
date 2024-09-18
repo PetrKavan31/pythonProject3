@@ -1,22 +1,20 @@
-def dig_pow(n, p):
-
-    
+def dig_pow(n, p):    
     m = n
-    sum_a = []
+    numbers = []
     while m != 0:
         y = m // 10
         z = m % 10
         m = y
-        sum_a.append(z)
-    sum_a.reverse()
+        numbers.append(z)
+    numbers.reverse()
 
-    sum_b = 0
-    for i in sum_a:
+    sum_num = 0
+    for i in numbers:
         a = i ** p
         p = p + 1
-        sum_b = sum_b + a
+        sum_num = sum_num + a
     
-    k = sum_b / n
+    k = sum_num / n
 
     if k % 1 == 0:
         return k
